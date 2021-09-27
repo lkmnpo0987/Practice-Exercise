@@ -1,0 +1,311 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Ubantu", sans-serif;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#navbar ul{
+    list-style-type: none;
+
+}
+#navbar ul li{
+    display:inline-block;
+    padding-left:1.2rem;
+    /* font-size:.8rem; */
+}
+#navbar ul li a{
+    color:black;
+}
+#navbar ul li a:hover{
+    color:skyblue;
+}
+#navbar i{
+    display: none;
+    color:white;
+    font-size:16px;
+}
+#navbar i:hover{
+    color:#fff;
+    font-size: 1rem;
+}
+.menu{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:2px solid gray;
+
+    
+}
+.first-image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background-image:linear-gradient(rgba(39, 35, 44, 0.76),rgba(39, 35, 44, 0.5)), url("images/back.jpg");
+    background-size: cover;
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    z-index:-1;
+}
+.welcome{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#heading h2{
+    color:white;
+    font-weight: 400;
+}
+#travel-gallery{
+    display:flex;
+}
+.choose-option{
+    padding:10px;
+    text-align: center;
+}
+.choose-option:hover{
+    padding:10px;
+    text-align: center;
+    background-color:rgba(39, 35, 44, 0.3) ;
+    border-radius:10px;
+    /* cursor: pointer; */
+}
+#travel i, #camera i{
+    font-size:16px;
+    color:green;
+    margin:15px;
+}
+#travel p, #camera p{
+    color: rgb(167, 165, 165);
+    font-weight: 300;
+    font-size: 13px;
+}
+#travel h5, #camera h5{
+    color: rgb(238, 238, 238);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.btn{
+    text-transform: uppercase;
+    background: none;
+    letter-spacing: 4px;
+    border: 2px solid rgb(22, 151, 91);
+    padding: 6px 20px;
+    border-radius: 32px;
+    color: rgb(22, 151, 91);
+    font-size: 10px;
+    font-weight: 600;
+
+}
+.btn:hover{
+    background: none;
+    letter-spacing: 4px;
+    background: rgba(39, 35, 44, 0.52);
+    border: 2px solid rgb(22, 151, 91);
+    padding: 8px 24px;
+    border-radius: 32px;
+    color: rgb(22, 151, 91);
+    font-size: 10px;
+    font-weight: 600;
+
+}
+.container-of-content{
+    display:flex;
+}
+.service{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0 32px;
+}
+.service h2{
+    color:rgb(72, 72, 73);
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+.service p{
+    color:rgb(169, 169, 170);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+.picture img{
+    border-radius: 50%;
+    margin-bottom: 12px;
+    height: 100px;
+    width: 100px;
+}
+.learn-more button{
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 2px solid rgb(22, 151, 91);
+    padding: 8px 16px 8px 16px;
+    border-radius: 32px;
+    color: rgb(22, 151, 91);
+    font-size: .7rem;
+    font-weight: 600;
+}
+.learn-more button:hover{
+    background: rgba(207, 205, 205, 0.589);
+    /* cursor: pointer; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid rgb(22, 151, 91);
+    padding: 8px 16px 8px 16px;
+    border-radius: 2rem;
+    color: rgb(22, 151, 91);
+    font-size: .7rem;
+    font-weight: 600;
+}
+@media only screen and (max-width: 500px){
+    .menu{
+        margin: 0 24px;
+        padding: 16px 0;
+        border-bottom: 2px solid rgba(114, 113, 113, 0.787); 
+    }
+    .first-image{
+        height: 25rem;
+    }
+    .welcome{
+        margin-bottom: 80px;
+    }
+    .title h3 a{
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+    #navbar ul{
+        display: none;
+    }
+    #navbar i{
+        display: block;
+    }
+    #heading{
+        margin: 26px 0 4px 0;
+    }
+    #travel-gallery{
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    .container-of-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .service{
+        margin-bottom: 35px;
+    }
+}
+@media (min-width: 501px) and (max-width: 1024px){
+    .menu{
+        margin: 0 2rem;
+        padding: 1.5rem 0;
+        border-bottom: 2px solid rgba(114, 113, 113, 0.787); 
+    }
+    .first-image{
+        height: 25rem;
+    }
+    .welcome-container{
+        margin-bottom: 5.7rem;
+    }
+    .title h3 a{
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: #fff;
+    }
+    #navbar ul{
+        display: none;
+    }
+    #navbar i{
+        display: block;
+    }
+    #heading{
+        margin: 40px 0 3px 0;
+    }
+    #travel-gallery{
+        flex-direction: row;
+        margin: 1rem 0 4rem 0;
+    }
+    .choose-option{
+        margin: 0 .5rem 0 .5rem;
+    }
+    .service-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .service{
+        margin-bottom: 2rem;
+        margin-top: 9rem;
+    }
+}
+@media (min-width: 1025px){
+    .menu{
+        margin: 0 7rem;
+        padding: 2rem 0 2.8rem 0;
+        border-bottom: 2px solid rgba(114, 113, 113, 0.787); 
+    }
+    .first-image{
+        height: 35rem;
+    }
+    .welcome-container{
+        margin-bottom: 14rem;
+    }
+    .title h3 a{
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: #fff;
+    }
+    #navbar ul{
+        display: block;
+    }
+    #navbar i{
+        display: none;
+    }
+    #heading{
+        margin: 4rem 0 .2rem 0;
+    }
+    #heading h2{
+        font-size: 2.5rem;
+    }
+    #travel-gallery{
+        flex-direction: row;
+        margin: 1rem 0 4rem 0;
+    }
+    .choose-option{
+        margin: 0 3.5rem 0 3.5rem;
+    }
+    .service-container{
+        flex-direction: row;
+        padding: 0 10rem;
+    }
+    .service{
+        margin: 10rem auto 4rem auto;
+    }
+    .picture img{
+        height: 150px;
+        width: 150px;
+    }
+    #navbar ul li a{
+        color:white;
+    }
+}
+
